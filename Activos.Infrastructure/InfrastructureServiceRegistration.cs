@@ -2,6 +2,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Activos.Infrastructure.Persistence;
+using Activos.Application.Contracts.Persistence;
+using Activos.Infrastructure.Repositories;
 
 namespace Activos.Infrastructure
 {
@@ -23,6 +25,8 @@ namespace Activos.Infrastructure
                     }), ServiceLifetime.Transient
             );
 
+            services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;
         }
