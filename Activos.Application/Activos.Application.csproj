@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\Infrastructure\" />
   </ItemGroup>
 
 </Project>

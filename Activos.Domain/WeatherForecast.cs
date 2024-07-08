@@ -1,6 +1,8 @@
-﻿namespace Activos.Domain
+﻿using Activos.Domain.common;
+
+namespace Activos.Domain
 {
-    public class WeatherForecast
+    public class WeatherForecast : BaseDomainModel
     {
         public DateTime Date { get; set; }
 
