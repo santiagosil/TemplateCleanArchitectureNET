@@ -1,0 +1,6 @@
+@Activos.ActivosAPI_HostAddress = http://localhost:5107
+
+GET {{Activos.ActivosAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
